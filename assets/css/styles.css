@@ -1,0 +1,82 @@
+/* Project theme */
+:root {
+  --psmd-primary: #311A0B;
+  --bulma-primary-h: 23deg;
+  --bulma-primary-s: 64%;
+  --bulma-primary-l: 12%;
+  --bulma-link-h: 23deg;
+  --bulma-link-s: 64%;
+  --bulma-link-l: 12%;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.section {
+  flex: 1;
+}
+
+.site-sidebar {
+  position: sticky;
+  top: 1rem;
+}
+
+.sidebar-search {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-search .field {
+  margin-bottom: 0;
+}
+
+.navbar .field {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+}
+
+a,
+.navbar-item,
+.menu-list a {
+  color: var(--psmd-primary);
+}
+
+.navbar-item:hover,
+.navbar-item:focus,
+.menu-list a:hover,
+.menu-list a:focus {
+  color: var(--psmd-primary);
+}
+
+.button.is-link,
+.button.is-primary,
+.menu-list a.is-active {
+  background-color: var(--psmd-primary);
+  border-color: var(--psmd-primary);
+  color: #fff;
+}
+
+.button.is-link:hover,
+.button.is-link:focus,
+.button.is-primary:hover,
+.button.is-primary:focus {
+  background-color: #452513;
+  border-color: #452513;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .site-sidebar {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+}
