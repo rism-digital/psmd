@@ -18,6 +18,7 @@ Gathering extensive information on prints of sacred music has been a wish of the
       <h2 class="title is-three-fifths">Search PSMD in RISM Online</h2>
         <form action="https://rism.online/search" method="get" role="search">
           <input type="hidden" name="mode" value="sources">
+          <input type="hidden" name="fq" value="contributing-project%3Ainstitution_51009572">
           <div class="field has-addons">
             <div class="control is-expanded">
               <input class="input is-small" type="search" placeholder="Search" name="q">
